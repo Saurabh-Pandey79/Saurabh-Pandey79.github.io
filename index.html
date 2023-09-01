@@ -20,8 +20,6 @@
          wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/clevertap.min.js';
          var s = document.getElementsByTagName('script')[0];
          s.parentNode.insertBefore(wzrk, s);
-        clevertap.init('ZWW-WWW-WWRZ')
-        clevertap.setLogLevel(0)     
      })();
      // with the exception of one of Identity, Email, or FBID
 // each of the following fields is optional
@@ -168,7 +166,7 @@ function checkCookies() {
       measurementId: "G-6BJZHR411R"
     };
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
 </body>
